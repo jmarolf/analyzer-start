@@ -5,14 +5,27 @@
     "tasks": [
       {
           "label": "build",
-          "command": "./build.sh",
+          "command": "${workspaceRoot}/build.sh",
           "type": "shell",
           "windows": {
-            "command": "./Build.cmd",
+            "command": "${workspaceRoot}/Build.cmd",
           },
           "problemMatcher": "$msCompile",
           "group": {
             "kind": "build",
+            "isDefault": true
+          },
+      },
+      {
+        "label": "test",
+          "command": "${workspaceRoot}/test.sh",
+          "type": "shell",
+          "windows": {
+            "command": "${workspaceRoot}/Test.cmd",
+          },
+          "problemMatcher": "$msCompile",
+          "group": {
+            "kind": "test",
             "isDefault": true
           },
       }
