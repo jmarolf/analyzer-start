@@ -1,0 +1,9 @@
+
+<Project>
+  <ItemGroup>
+    <!-- 
+    Add new dependecies to your repo here in this format:
+    <PackageVersion Include="Newtonsoft.Json" Version="12.0.3" />
+    -->
+  </ItemGroup>
+</Project>
